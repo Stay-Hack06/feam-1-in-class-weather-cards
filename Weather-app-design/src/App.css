@@ -1,0 +1,37 @@
+#root {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: whitesmoke;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+header {
+  justify-content: center;
+}
+
+h2 {
+  color: black;
+}
+
+section.Card {
+  flex-wrap: wrap;
+}
+
+p {
+  color: black;
+}
+
+section.button {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header, section.Card, section.button {
+  display: flex;
+  width: 100%;
+}
