@@ -39,10 +39,7 @@ function App() {
     <h2>Trending today</h2>
     </header>
     <section className="Card">
-      <Card img={image1} title={WEATHER_CARDS_DATA[0].title} subtitle={WEATHER_CARDS_DATA[0].subtitle}/>
-      <Card img={image2} title={WEATHER_CARDS_DATA[1].title} subtitle={WEATHER_CARDS_DATA[1].subtitle}/>
-      <Card img={image3} title={WEATHER_CARDS_DATA[2].title} subtitle={WEATHER_CARDS_DATA[2].subtitle}/>
-      <Card img={image4} title={WEATHER_CARDS_DATA[3].title} subtitle={WEATHER_CARDS_DATA[3].subtitle}/>
+      {WEATHER_CARDS_DATA.map((weatherCardData) => (<Card img={weatherCardData.img} title={weatherCardData.title} subtitle={weatherCardData.subtitle}/>))}
     </section>
     <section className='button'>
       <div>
